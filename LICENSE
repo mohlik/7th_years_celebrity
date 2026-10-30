@@ -19,3 +19,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+----------------------------------------------------------------------
+EXCLUSION FOR PERSONAL MEDIA ASSETS:
+All photos, images, and personal media files located in the `/assests/` 
+directory (and its subdirectories) are strictly EXCLUDED from the MIT License. 
+
+All rights to these personal assets are reserved by the copyright owner. 
+You may not copy, distribute, modify, or use these images for any commercial 
+or non-commercial purposes without explicit written permission.
