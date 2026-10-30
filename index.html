@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ru" class="is-locked">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6efe6">
+  <meta name="format-detection" content="telephone=no">
+  <title>7 лет вместе</title>
+  <meta name="description" content="7 причин, почему я тебя люблю">
+  <meta property="og:title" content="7 лет вместе">
+  <meta property="og:description" content="7 причин, почему я тебя люблю">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%238c1d3d' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,500&display=swap">
+  <link rel="preload" href="assets/img/hero-bay.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Заставка: тап по печати открывает открытку и запускает музыку
+       (браузеры на телефонах не дают включить звук без нажатия) -->
+  <div class="intro" id="intro">
+    <p class="intro__for">для тебя</p>
+    <button class="seal" id="open-btn" type="button" aria-label="Открыть открытку"><span>7</span></button>
+    <p class="intro__hint">нажми, чтобы открыть</p>
+  </div>
+
+  <div class="progress" aria-hidden="true"><span id="progress"></span></div>
+
+  <!-- Фоновая музыка: положи трек в assets/music/music.mp3
+       (или поменяй путь в src). Если файла нет — кнопка просто не появится. -->
+  <audio id="music" src="assets/music/music.mp3" loop preload="metadata"></audio>
+  <button class="music" id="music-btn" type="button" aria-label="Выключить музыку" aria-pressed="true" hidden>
+    <span class="music__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  </button>
+
+  <main>
+
+    <!-- ============ Первый экран ============ -->
+    <header class="hero">
+      <p class="hero__years" data-in style="--d: .25s">2019 — 2026</p>
+      <h1 class="hero__title">
+        <span class="hero__mark" data-in style="--d: .35s">
+          <span class="hero__seven-outline" aria-hidden="true">7</span>
+          <span class="hero__seven">7</span>
+        </span>
+        <span class="hero__line" data-in style="--d: 1s">лет вместе</span>
+      </h1>
+      <div class="hero__divider" data-in style="--d: 1.3s" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+      </div>
+      <p class="hero__sub" data-in style="--d: 1.5s">7 причин,<br>почему я&nbsp;тебя люблю</p>
+      <a class="scroll-cue" href="#reason-1" data-in style="--d: 2.6s">
+        <span>листай</span><i aria-hidden="true"></i>
+      </a>
+    </header>
+
+    <!-- ============ Причина 1 ============ -->
+    <section class="reason" id="reason-1">
+      <span class="reason__ghost" data-parallax=".35" aria-hidden="true">1</span>
+      <div class="fan reveal">
+        <figure class="card"><img src="assets/img/smile-1.webp" alt="Ты смеёшься у моря" width="900" height="1126" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+        <figure class="card card--tape"><img src="assets/img/smile-2.webp" alt="Ты улыбаешься на пляже" width="900" height="1125" loading="lazy" decoding="async"><figcaption>самая красивая</figcaption></figure>
+        <figure class="card"><img src="assets/img/smile-3.webp" alt="Ты в солнечных очках на пляже" width="900" height="1125" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+      </div>
+      <div class="reason__text reveal">
+        <p class="reason__num">причина № 1</p>
+        <h2 class="reason__title">Твоя улыбка</h2>
+        <p class="reason__body">Хитрая, смущённая, сонная, сияющая&nbsp;— я&nbsp;знаю их&nbsp;все наизусть. И&nbsp;каждая до&nbsp;сих пор действует на&nbsp;меня так&nbsp;же, как в&nbsp;самый первый день. Семь лет прошло, а&nbsp;я&nbsp;всё ещё улыбаюсь в&nbsp;ответ, даже не&nbsp;замечая этого.</p>
+      </div>
+    </section>
+
+    <!-- ============ Причина 2 ============ -->
+    <section class="reason reason--right" id="reason-2">
+      <span class="reason__ghost" data-parallax=".35" aria-hidden="true">2</span>
+      <div class="fan reveal">
+        <figure class="card"><img src="assets/img/travel-1.webp" alt="Ты в кафе на набережной" width="900" height="1125" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+        <figure class="card card--tape"><img src="assets/img/travel-2.webp" alt="Ты сидишь на скале у моря" width="900" height="1124" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+        <figure class="card"><img src="assets/img/travel-3.webp" alt="Ты плаваешь в маске" width="610" height="763" loading="lazy" decoding="async"><figcaption>русалка</figcaption></figure>
+      </div>
+      <div class="reason__text reveal">
+        <p class="reason__num">причина № 2</p>
+        <h2 class="reason__title">С&nbsp;тобой&nbsp;— хоть на&nbsp;край света</h2>
+        <p class="reason__body">Горы, море, незнакомые города, дороги без&nbsp;плана&nbsp;— с&nbsp;тобой любая поездка превращается в&nbsp;приключение. А&nbsp;главное я&nbsp;давно понял: мне не&nbsp;так важно куда. Мне важно&nbsp;— с&nbsp;кем.</p>
+      </div>
+    </section>
+
+    <!-- ============ Причина 3 ============ -->
+    <section class="reason" id="reason-3">
+      <span class="reason__ghost" data-parallax=".35" aria-hidden="true">3</span>
+      <div class="fan reveal">
+        <figure class="card"><img src="assets/img/fun-1.webp" alt="Ты показываешь язык под пальмами" width="472" height="590" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+        <figure class="card card--tape"><img src="assets/img/fun-2.webp" alt="Ты бежишь по пляжу" width="900" height="1125" loading="lazy" decoding="async"><figcaption>Самая красивая</figcaption></figure>
+        <figure class="card"><img src="assets/img/fun-3.webp" alt="Ты в кресле в жилетке" width="900" height="1125" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+      </div>
+      <div class="reason__text reveal">
+        <p class="reason__num">причина № 3</p>
+        <h2 class="reason__title">С&nbsp;тобой никогда не&nbsp;скучно</h2>
+        <p class="reason__body">Ты дурачишься так, что я&nbsp;смеюсь до&nbsp;слёз. Рядом с&nbsp;тобой можно быть смешным, нелепым, настоящим&nbsp;— и&nbsp;знать, что за&nbsp;это тебя будут любить только сильнее.</p>
+      </div>
+    </section>
+
+    <!-- ============ Причина 4 ============ -->
+    <section class="reason reason--right" id="reason-4">
+      <span class="reason__ghost" data-parallax=".35" aria-hidden="true">4</span>
+      <div class="fan reveal">
+        <figure class="card"><img src="assets/img/summer-3.webp" alt="Ты загораешь на шезлонге" width="900" height="1124" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+        <figure class="card card--tape"><img src="assets/img/summer-2.webp" alt="Ты под пляжным зонтом" width="900" height="1125" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+        <figure class="card"><img src="assets/img/pool-1.webp" alt="Ты в бирюзовой воде" width="680" height="850" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+      </div>
+      <div class="reason__text reveal">
+        <p class="reason__num">причина № 4</p>
+        <h2 class="reason__title">Ты умеешь радоваться</h2>
+        <p class="reason__body">Солнцу, морю, тёплой воде, просто хорошему дню. Ты умеешь быть счастливой прямо сейчас, не&nbsp;откладывая на&nbsp;потом,&nbsp;— и&nbsp;рядом с&nbsp;тобой я&nbsp;тоже этому учусь.</p>
+      </div>
+    </section>
+
+    <!-- ============ Причина 5 ============ -->
+    <section class="reason" id="reason-5">
+      <span class="reason__ghost" data-parallax=".35" aria-hidden="true">5</span>
+      <div class="duo reveal">
+        <figure class="card"><img src="assets/img/open-1.webp" alt="Ты раскинула руки навстречу шторму" width="1000" height="1333" loading="lazy" decoding="async"><figcaption>Боинг 747</figcaption></figure>
+        <figure class="card card--tape"><img src="assets/img/open-2.webp" alt="Ты раскинула руки дома" width="1000" height="1334" loading="lazy" decoding="async"><figcaption></figcaption></figure>
+      </div>
+      <div class="reason__text reveal">
+        <p class="reason__num">причина № 5</p>
+        <h2 class="reason__title">Твои объятия</h2>
+        <p class="reason__body">Ты раскидываешь руки&nbsp;— и&nbsp;я&nbsp;точно знаю, где моё место. В&nbsp;них проходит любая усталость, любая тревога, любой плохой день. Семь лет прошло, а&nbsp;лучше места на&nbsp;свете я&nbsp;так и&nbsp;не&nbsp;нашёл.</p>
+      </div>
+    </section>
+
+    <!-- ============ Причина 6 ============ -->
+    <section class="reason reason--right" id="reason-6">
+      <span class="reason__ghost" data-parallax=".35" aria-hidden="true">6</span>
+      <div class="arch-wrap reveal">
+        <div class="arch"><img src="assets/img/tender.webp" alt="Ты с букетом белых роз" width="1100" height="1650" loading="lazy" decoding="async"></div>
+        <p class="arch-note">мой самый уютный человек</p>
+      </div>
+      <div class="reason__text reveal">
+        <p class="reason__num">причина № 6</p>
+        <h2 class="reason__title">Твоя нежность</h2>
+        <p class="reason__body">За&nbsp;заботу в&nbsp;мелочах, за&nbsp;тёплые руки, за&nbsp;то, как ты&nbsp;умеешь сделать дом&nbsp;— домом. Рядом с&nbsp;тобой спокойно. Рядом с&nbsp;тобой&nbsp;— хорошо.</p>
+      </div>
+    </section>
+
+    <!-- ============ Причина 7 ============ -->
+    <section class="reason reason--night" id="reason-7">
+      <div class="night-photo reveal">
+        <div class="night-photo__media" data-parallax=".12">
+          <img src="assets/img/evening.webp" alt="Ты оборачиваешься на фоне колеса обозрения" width="1181" height="2560" loading="lazy" decoding="async">
+        </div>
+        <span class="reason__ghost" data-parallax=".3" aria-hidden="true">7</span>
+      </div>
+      <div class="reason__text reveal">
+        <p class="reason__num">причина № 7</p>
+        <h2 class="reason__title">С&nbsp;тобой обычный вечер&nbsp;— волшебство</h2>
+        <p class="reason__body">Огни, тёплый воздух, ты&nbsp;оборачиваешься&nbsp;— и&nbsp;я&nbsp;в&nbsp;который раз понимаю, как сильно мне повезло. Семь лет вместе, а&nbsp;у&nbsp;меня от&nbsp;тебя всё так&nbsp;же захватывает дух.</p>
+      </div>
+    </section>
+
+    <!-- ============ Финал ============ -->
+    <section class="finale">
+      <div class="stats reveal">
+        <p class="stats__lead">7 лет&nbsp;— это</p>
+        <div class="stats__grid">
+          <div class="stat"><b data-count="84">84</b><span>месяца</span></div>
+          <div class="stat"><b data-count="2557">2 557</b><span>дней</span></div>
+          <div class="stat"><b data-count="61368">61 368</b><span>часов</span></div>
+          <div class="stat"><b>∞</b><span>любви</span></div>
+        </div>
+        <p class="stats__thanks">И&nbsp;за&nbsp;каждый из&nbsp;них&nbsp;— спасибо.</p>
+      </div>
+
+      <p class="finale__lead reveal">Это только семь причин.<br>На&nbsp;самом деле их&nbsp;— бесконечно много.</p>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <img src="assets/img/smile-2.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/travel-2.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/fun-1.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/pool-1.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/open-1.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/summer-2.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/travel-1.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/fun-3.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/smile-3.webp" alt="" loading="lazy" decoding="async">
+        </div>
+        <div class="marquee__track marquee__track--reverse">
+          <img src="assets/img/summer-3.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/fun-2.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/smile-1.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/pool-2.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/travel-3.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/open-2.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/tender.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/evening.webp" alt="" loading="lazy" decoding="async">
+          <img src="assets/img/finale.webp" alt="" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <figure class="card card--finale card--tape reveal">
+        <img src="assets/img/finale.webp" alt="Ты на смотровой площадке над заливом" width="1100" height="1100" loading="lazy" decoding="async">
+        <figcaption>с&nbsp;годовщиной, любимая</figcaption>
+      </figure>
+
+      <div class="finale__end reveal">
+        <h2 class="finale__love">Я&nbsp;люблю тебя</h2>
+        <p class="finale__sign">всегда твой</p>
+        <button class="love-btn" id="love-btn" type="button" aria-label="Запустить сердечки">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </button>
+        <p class="love-hint">нажми</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
