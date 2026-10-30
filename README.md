@@ -1,1 +1,2 @@
 # 7th_years_celebrity
+PERSONAL PHOTOS. DO NOT COPY. ALL RIGHTS RESERVED.
